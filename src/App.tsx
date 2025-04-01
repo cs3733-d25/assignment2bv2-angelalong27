@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Title from "./props/title.tsx"
+import Intro from "./props/intro.tsx"
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Title title={"CS3733-D25 Team 13: Dancing and Cooking"}/>
+        <Intro name1={"Aditri"} name2={"Angela"}/>
     </>
   )
 }
