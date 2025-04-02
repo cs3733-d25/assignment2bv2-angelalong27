@@ -22,7 +22,9 @@ export function FillForm(){
     }
     return (
         <form onSubmit={handleSubmit} className="p-4 border border-gray-400 bg-white">
-            <p className="text-lg font-bold mb-2"> Contact Aditri </p>
+            <p className="text-2xl font-bold mb-2"> Contact Aditri </p>
+            <br/>
+            <Label htmlFor="Contact" className="text-lg font-bold mb-2">Your Contact Info</Label>
             <Input type="name" placeholder="Name" className="mb-2"/>
             <Input type="email" placeholder="Email" />
             <br/>
@@ -68,6 +70,7 @@ export function FillForm(){
                 <p className="text-sm">Other</p>
             </div>
             <br/>
+            <Label htmlFor="Additional" className="text-lg font-bold mb-2">Additional</Label>
             <Select>
                 <SelectTrigger className="w-[180px] bg-white text-black">
                     <SelectValue placeholder="Reason for Reaching Out" />
@@ -82,7 +85,7 @@ export function FillForm(){
             <br/>
             <Textarea placeholder="Additional Comments?" />
             <br/>
-            <Button variant="outline">Submit</Button>
+            <Button className="bg-sky-200">Submit</Button>
         </form>
     )
 }

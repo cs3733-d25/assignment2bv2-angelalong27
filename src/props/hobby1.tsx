@@ -6,9 +6,9 @@ function Hobby1() {
 
     return (
         <>
-            <List1 />
-            <Table1 />
-            <FillForm />
+            <List1/>
+            <Table1/>
+            <FillForm/>
         </>
     )
 }
