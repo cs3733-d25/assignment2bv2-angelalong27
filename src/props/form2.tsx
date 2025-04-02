@@ -1,52 +1,51 @@
 import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button"
 
 export function FillForm2() {
     return (
-        <form className="flex items-center space-x-2">
-            <h2>Your Favorite Foods</h2>
-            <p>I'm always open in trying new recipes.
-                What are some of your favorite cuisines, dishes, and meals?</p>
+        <form className="space-y-2 border-2 border-gray-500 rounded-lg p-4 text-sm">
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Chinese</p>
                 <Checkbox id="chinese"/>
+                <p className="text-sm">Chinese</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Italian</p>
                 <Checkbox id="italian"/>
+                <p className="text-sm">Italian</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Japanese</p>
                 <Checkbox id="japanese"/>
+                <p className="text-sm">Japanese</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Mexican</p>
                 <Checkbox id="mexican"/>
+                <p className="text-sm">Mexican</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Indian</p>
                 <Checkbox id="indian"/>
+                <p className="text-sm">Indian</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Thai</p>
                 <Checkbox id="thai"/>
+                <p className="text-sm">Thai</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">French</p>
                 <Checkbox id="french"/>
+                <p className="text-sm">French</p>
             </div>
             <div className="flex items-center space-x-2">
-                <Label htmlFor="other">Other:</Label>
-                <Input id="other" placeholder="Type a different cuisine that is not listed"/>
+                <Checkbox id="other"/>
+                <p className="text-sm">Other:</p>
+                <Input id="other" placeholder="Type in your favorite cuisines that is not listed"/>
             </div>
             <div className="flex items-center space-x-2">
-                <Label htmlFor="favorite">Favorite Dishes or Meals:</Label>
-                <Textarea id="favorite" rows={2} placeholder="Write your favorite dishes or meals"/>
+                <p className="text-sm">Favorite Dishes or Meals:</p>
+                <Textarea id="favorite" rows={2} placeholder="Type in favorite dishes or meals"/>
             </div>
-            <button type="submit">Submit</button>
+            <div className="text-right">
+                <Button className="gray-500">Submit</Button>
+            </div>
         </form>
     )
 }
