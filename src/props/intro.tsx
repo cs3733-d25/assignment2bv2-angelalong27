@@ -8,7 +8,7 @@ const Intro = ({ name1, name2 }: IntroProps)=> {
         <div>
             <p>
                 This is website dedicated to the hobbies of dancing and cooking!
-                 {name1}'s hobby is dancing and {name2}'s hobby is cooking!
+                {name1}'s hobby is dancing and {name2}'s hobby is cooking!
             </p>
         </div>)
 }
