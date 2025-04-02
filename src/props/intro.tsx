@@ -1,13 +1,16 @@
-import {ReactElement} from "react";
-
-
-//intro.tsx component that includes a paragraph that introduces both of you. For your names, use props to obtain the names that were passed in from <App />
 type IntroProps = {
-    paragraph: string
+    name1: string
+    name2: string
 }
 
-const Intro = ({ paragraph }: IntroProps): ReactElement => {
-    return <p>{paragraph}</p>
+const Intro = ({ name1, name2 }: IntroProps)=> {
+    return(
+        <div>
+            <p>
+                This is website dedicated to the hobbies of dancing and cooking!
+                {name1}'s hobby is dancing and {name2}'s hobby is cooking!
+            </p>
+        </div>)
 }
 
 export default Intro

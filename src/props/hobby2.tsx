@@ -1,4 +1,4 @@
-import cookingPhoto from './public/cooking.jpg';
+import cookingPhoto from './cooking.jpg';
 
 function Hobby2() {
     return (
