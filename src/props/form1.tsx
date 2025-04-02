@@ -11,60 +11,61 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button"
 
 export function FillForm(){
-    const [text, setText] = useState("");
+    const [text, setText] = useState(""); // Doesnt work yet but button doesn't need to work?
 
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault(); // prevents default behavior aka refresh
         setText(""); // clears input field
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <Input type="name" placeholder="Name" />
-            <br/>
+        <form onSubmit={handleSubmit} className="p-4 border border-gray-400 bg-white">
+            <p className="text-lg font-bold mb-2"> Contact Aditri </p>
+            <Input type="name" placeholder="Name" className="mb-2"/>
             <Input type="email" placeholder="Email" />
             <br/>
-            <Label htmlFor="Year">Year</Label>
-            <br/>
+            <Label htmlFor="Year" className="text-lg font-bold mb-2">Year</Label>
             <RadioGroup>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 text-sm">
                     <RadioGroupItem value="freshman" id="freshman" />
                     <Label htmlFor="freshman">Freshman</Label>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 text-sm">
                     <RadioGroupItem value="sophomore" id="sophomore" />
                     <Label htmlFor="sophomore">Sophomore</Label>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 text-sm">
                     <RadioGroupItem value="junior" id="junior" />
                     <Label htmlFor="junior">Junior</Label>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 text-sm">
                     <RadioGroupItem value="senior" id="senior" />
                     <Label htmlFor="senior">Senior</Label>
                 </div>
             </RadioGroup>
             <br/>
+            <Label htmlFor="Fav" className="text-lg font-bold mb-2 ">Favorite Dance Form</Label>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Ballet</p>
                 <Checkbox id="ballet" />
+                <p className="text-sm">Ballet</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Jazz</p>
                 <Checkbox id="jazz" />
+                <p className="text-sm">Jazz</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Hip Hop</p>
                 <Checkbox id="hiphop" />
+                <p className="text-sm">Hip Hop</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Classical</p>
                 <Checkbox id="classical" />
+                <p className="text-sm">Classical</p>
             </div>
             <div className="flex items-center space-x-2">
-                <p className="text-lg">Other</p>
                 <Checkbox id="other" />
+                <p className="text-sm">Other</p>
             </div>
             <br/>
             <Select>
@@ -81,7 +82,7 @@ export function FillForm(){
             <br/>
             <Textarea placeholder="Additional Comments?" />
             <br/>
-            <button type="submit">Submit</button>
+            <Button variant="outline">Submit</Button>
         </form>
     )
 }
