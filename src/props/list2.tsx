@@ -1,7 +1,7 @@
 const CuisineList = () => {
     return (
         <div>
-            <label className="text-lg font-bold mb-2"> Some of my favorite cuisines </label>
+            <label className="list-label"> Some of my favorite cuisines </label>
             <ul className="w-full text-left list-disc mb-5">
                 <li>Japanese</li>
                 <li>Cambodian</li>
@@ -11,7 +11,7 @@ const CuisineList = () => {
                 <li>Korean</li>
                 <li>Thai</li>
             </ul>
-            <label className="text-lg font-bold mb-2"> Some cuisines I want to try more </label>
+            <label className="list-label"> Some cuisines I want to try more </label>
             <ul className="w-full text-left list-disc mb-5">
                 <li>Indian</li>
                 <li>Greek</li>

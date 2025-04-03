@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-label {
+    @apply text-lg font-bold mb-2;
+}
+
+.list-container {
+    @apply w-full text-left list-disc mb-5;
+}

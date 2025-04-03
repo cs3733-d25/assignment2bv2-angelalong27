@@ -1,10 +1,11 @@
 import {ReactElement} from "react";
+import './list.css';
 
 const List1 = (): ReactElement => {
     return(
         <div>
-            <label className="text-lg font-bold mb-2"> Ways to learn dance </label>
-            <ul className="w-full text-left list-disc mb-5">
+            <label className="list-label"> Ways to learn dance </label>
+            <ul className="list-container">
                 <li>Dance Videos</li>
                 <li>Dance Classes</li>
                 <li>Dance Clubs</li>

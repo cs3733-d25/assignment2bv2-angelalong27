@@ -2,7 +2,7 @@ import cookingPhoto from '../../public/cooking.jpg';
 import CuisineList from "@/props/list2.tsx";
 import {Table2} from "@/props/table2.tsx";
 import {FillForm2} from "@/props/form2.tsx";
-
+import '../App.css';
 
 function Hobby2() {
     return (

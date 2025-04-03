@@ -5,7 +5,7 @@ type TitleProps = {
 }
 
 const Title = ({ title }: TitleProps): ReactElement => {
-    return <h1>{title}</h1>
+    return <h1 className="font-bold text-3xl pb-2">{title}</h1>
 }
 
 export default Title
